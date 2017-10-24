@@ -15,8 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hometimeline', 'HomeController@HomeTimeline');
-
-Route::get('/posttweet', 'HomeController@FormPostTweet');
-
-Route::post('/posttweet', 'HomeController@PostTweet');
+Route::get('/trend', 'HomeController@Home');
+Route::get('/unikaneh', 'HomeController@Home');
+Route::get('/intermezo', 'HomeController@Home');
+Route::get('/entertainment', 'HomeController@Home');
+Route::get('/travel', 'HomeController@Home');
+Route::get('/inspirasi', 'HomeController@Home');
+Route::get('/olahraga', 'HomeController@Home');
+Route::get('/english', 'HomeController@Home');
